@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <form action="google.com" method="post">
+      
+        <h1>Sign Up</h1>
+        
+        <fieldset>
+          <legend><span class="number"></span>Your basic info</legend>
+          <label for="name">Company Name:</label>
+          <input type="text" id="name" name="company_name">
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="company_email">
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password">
+        
+        <fieldset>
+          <legend><span class="number"></span>Your profile</legend>
+          <label for="bio">Biography:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+        </fieldset>
+        <fieldset>
+          <label for="energy-source">Renewable Energy Source type:</label>
+          <select id="energy" name="energy-source">
+            <optgroup label="Energy">
+              <option value="solar-energy">Solar energy</option>
+              <option value="wind-energy">Wind energy</option>
+              <option value="hydropower-energy">Hydropower</option>
+              <option value="geothermal-energy"> Geothermal energy</option>
+              <option value="biomass-energy">Biomass</option>
+            </optgroup>
+          </select>
+          </fieldset>
+        <button type="submit">Sign Up</button>
+      </form>
+</body>
+</html>

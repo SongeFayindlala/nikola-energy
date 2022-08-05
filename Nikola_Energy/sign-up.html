@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="style/bootstrap.min.css" rel="stylesheet">
+    <link href="style/bootstrap-icons.css" rel="stylesheet">
+    <link href="style/energy.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="index.html">
+          Nikola Energy
+        </a>
+
+        <div class="d-lg-none">
+            <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+
+            <a href="product-detail.html" class="bi-bag custom-icon"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">Pricing</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="sign-up.html">SignUp</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">login</a>
+              </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQs</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+            <div class="d-none d-lg-block">
+                <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+
+                <a href="product-detail.html" class="bi-bag custom-icon"></a>
+            </div>
+        </div>
+    </div>
+</nav>
+      <form action="google.com" method="post">
+      
+        <h1>Sign Up</h1>
+        
+        <fieldset>
+          <legend><span class="number"></span>Your basic info</legend>
+          <label for="name">Company Name:</label>
+          <input type="text" id="name" name="company_name">
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="company_email">
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password">
+        
+        <fieldset>
+          <legend><span class="number"></span>Your profile</legend>
+          <label for="bio">Biography:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+        </fieldset>
+        <fieldset>
+          <label for="energy-source">Renewable Energy Source type:</label>
+          <select id="energy" name="energy-source">
+            <optgroup label="Energy">
+              <option value="solar-energy">Solar energy</option>
+              <option value="wind-energy">Wind energy</option>
+              <option value="hydropower-energy">Hydropower</option>
+              <option value="geothermal-energy"> Geothermal energy</option>
+              <option value="biomass-energy">Biomass</option>
+            </optgroup>
+          </select>
+          </fieldset>
+        <button type="submit">Sign Up</button>
+      </form>
+</body>
+</html>
